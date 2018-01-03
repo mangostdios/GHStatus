@@ -23,9 +23,11 @@ for(var i=0; i<data.length; i++) {
 if(data[i].comments===0) {
 needed.push(data[i].body+"~ needs attention ~"+user+" "+repo+" ");
 }
+        console.log(data[i].comments);
 // help wanted code next
 }
     console.log(data);
+
 });
 }
 ghStatus("Mountio","mountio.github.io");
