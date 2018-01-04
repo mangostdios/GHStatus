@@ -21,7 +21,7 @@ function ghStatus(user,repo) {
 apiLib.get("https://api.github.com/repos/"+user+"/"+repo+"/issues", function(data) {
 for(var i=0; i<data.length; i++) {
 if(data[i].comments===0) {
-needed.push(data[i].body+"~ needs attention ~"+user+" "+repo+" ");
+needed.push(data[i].title+"~ needs attention ~"+user+" "+repo+" ");
 }
         console.log(data[i].comments);
     // I need help getting the comments to load. 
