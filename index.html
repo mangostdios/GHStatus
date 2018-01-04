@@ -25,6 +25,19 @@ needed.push(data[i].title+"~ needs attention ~"+user+" "+repo+" ");
         console.log(data[i].comments);
 
 // help wanted code next
+    
+    var tags = data[i].labels;
+    var d = 0;
+    for(var aaa=0;aaa < tags.length; aaa++) {
+    if(tags[aaa].name==="help wanted"){
+    d++;
+    }
+    if(d!==0) {
+    needed.push(data[i].title+"~ help wanted ~"+user+" "+repo+" ");
+    }
+    }
+    
+    
 }
     console.log(data);
 
