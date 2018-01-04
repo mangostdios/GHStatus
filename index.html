@@ -2,8 +2,7 @@
 <html>
 <head><title>GHStatus</title></head>
 <body>
-<div id="p" onclick="    document.getElementById("p").innerHTML=needed.join(" -~- ");">Click here to get data</div>
-<script>
+    <script>
 var apiLib = {
     get: function (site,callback) {
         var xhttp = new XMLHttpRequest();
@@ -39,6 +38,8 @@ ghStatus("Mountio",datas[aa]);
     }
 
 </script>
+<div id="p" onclick="this.innerHTML=needed.join(" -~- ");">Click here to get data</div>
+
 
 </body>
 </html>
