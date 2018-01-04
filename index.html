@@ -31,7 +31,13 @@ needed.push(data[i].body+"~ needs attention ~"+user+" "+repo+" ");
 
 });
 }
-ghStatus("Mountio","mountio.github.io");
+    var datas = ["mountio.github.io","GHStatus","site-suggestions"];
+    
+    for(var aa=0;aa<datas.length;aa++) {
+ghStatus("Mountio",datas[aa]);
+        
+    }
+    document.getElementById("p").innerHTML=needed.join(" -~- ");
 </script>
 
 </body>
